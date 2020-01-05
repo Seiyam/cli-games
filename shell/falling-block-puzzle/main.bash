@@ -1,4 +1,11 @@
 #!/bin/bash
+input_piece_face_1=$1
+input_piece_face_2=$2
+input_piece_face_3=$3
+input_piece_face_4=$4
+input_piece_face_5=$5
+input_piece_face_6=$6
+input_piece_face_7=$7
 
 cls() {
   echo -e $'\e[H\e[2J'
@@ -120,7 +127,7 @@ piece_face_0='  '
 
 # 000
 #   0
-piece_face_1='Ａ'
+piece_face_1=${input_piece_face_1:-'Ａ'}
 piece_xmin_10=34 piece_xmax_10=48
 piece_x_101=-1 piece_y_101=0
 piece_x_102=1 piece_y_102=0
@@ -140,7 +147,7 @@ piece_x_133=-1 piece_y_133=1
 
 # 000
 # 0
-piece_face_2='Ｂ'
+piece_face_2=${input_piece_face_2:-'Ｂ'}
 piece_xmin_20=34 piece_xmax_20=48
 piece_x_201=-1 piece_y_201=0
 piece_x_202=1 piece_y_202=0
@@ -160,7 +167,7 @@ piece_x_233=-1 piece_y_233=-1
 
 #  00
 # 00
-piece_face_3='Ｃ'
+piece_face_3=${input_piece_face_3:-'Ｃ'}
 piece_xmin_30=34 piece_xmax_30=48
 piece_x_301=-1 piece_y_301=1
 piece_x_302=1 piece_y_302=0
@@ -180,7 +187,7 @@ piece_x_333=1 piece_y_333=0
 
 # 00
 #  00
-piece_face_4='Ｄ'
+piece_face_4=${input_piece_face_4:-'Ｄ'}
 piece_xmin_40=34 piece_xmax_40=48
 piece_x_401=-1 piece_y_401=0
 piece_x_402=1 piece_y_402=1
@@ -201,7 +208,7 @@ piece_x_433=1 piece_y_433=0
 
 # 000
 #  0
-piece_face_5='Ｅ'
+piece_face_5=${input_piece_face_5:-'Ｅ'}
 piece_xmin_50=34 piece_xmax_50=48
 piece_x_501=-1 piece_y_501=0
 piece_x_502=1 piece_y_502=0
@@ -222,7 +229,7 @@ piece_x_533=-1 piece_y_533=0
 
 # 0000
 #
-piece_face_6='Ｆ'
+piece_face_6=${input_piece_face_6:-'Ｆ'}
 piece_xmin_60=34 piece_xmax_60=46
 piece_x_601=-1 piece_y_601=0
 piece_x_602=1 piece_y_602=0
@@ -243,7 +250,7 @@ piece_x_633=0 piece_y_633=2
 
 # 00
 # 00
-piece_face_7='Ｇ'
+piece_face_7=${input_piece_face_7:-'Ｇ'}
 piece_xmin_70=32 piece_xmax_70=48
 piece_x_701=1 piece_y_701=0
 piece_x_702=1 piece_y_702=1
